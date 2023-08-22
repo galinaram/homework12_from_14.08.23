@@ -22,7 +22,7 @@ public class Main {
         System.out.println("ДАННЫЕ КНИГИ 2:");
         book2.printBook();
 
-//        int c = 0;
+//        char c = 0;
 //        do {
 //            Scanner scanner = new Scanner(System.in);
 //            System.out.println("1 - ввести данные двух книг");
