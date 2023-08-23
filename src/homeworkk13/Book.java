@@ -39,8 +39,21 @@ public class Book {
         return this;
     }
     public void printBook() {
-        System.out.println("название книги: " + name);
-        author.printAuthor();
-        System.out.println("год издания: " + year);
+        System.out.println(this.toString());
+    }
+
+    public String toString() {
+        return "Название " + name + author.toString() + " Год " + year;
+    }
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book b2 = (Book) other;
+        return toString().equals(b2.toString());
+    }
+    public int hashCode() {
+        return java.util.Objects.hash(name);
     }
 }
+

@@ -29,7 +29,10 @@ public class Author {
         return this;
     }
     public void printAuthor() {
-        System.out.println("имя автора: " + firstName);
-        System.out.println("фамилия автора: " + secondName);
+        System.out.println(this.toString());
+    }
+
+    public String toString() {
+        return " Имя " + firstName + " Фамилия " + secondName;
     }
 }
